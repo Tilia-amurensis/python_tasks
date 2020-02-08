@@ -20,13 +20,32 @@ class MyShell(cmd.Cmd):
             step = int(arg_list[0])
             self.__t.forward(step)
 
+    def do_backward(self, arg):
+        arg_list = arg.split()
+        if len(arg_list) > 0:
+            step = int(arg_list[0])
+            self.__t.backward(step)
+
     def do_left(self, arg):
         arg_list = arg.split()
         if len(arg_list) > 0:
             step = int(arg_list[0])
             self.__t.left(step)
 
+    def do_right(self, arg):
+        arg_list = arg.split()
+        if len(arg_list) > 0:
+            step = int(arg_list[0])
+            self.__t.right(step)
             
+    def do_reset(self, arg):
+        self.__t.reset()
+
+    def do_up(self, arg):
+        self.__t.up()
+
+    def do_down(self, arg):
+        self.__t.down()
 
     def do_exit(self, arg):
         'exit: stop doing and exit...'
