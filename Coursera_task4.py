@@ -1,6 +1,6 @@
 def penguin(num):
-    head = "   _~_    "      
-    eyes = "  (o o)   "    
+    head = "   _~_    "
+    eyes = "  (o o)   "
     nose = " /  V  \\  "
     stomach = "/(  _  )\\ "
     foot = "  ^^ ^^   "
@@ -20,10 +20,10 @@ def penguin(num):
         print(foot, end='')
     print()
 
+
 def main():
     num = int(input())
     penguin(num)
 
 if __name__ == "__main__":
     main()
-   

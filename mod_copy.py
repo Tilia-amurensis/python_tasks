@@ -29,3 +29,15 @@ my_animals[0].species = 'dragon'
 print(my_animals[0].species)
 print(more_animals[0].species)
 
+class Car:
+    pass
+carl=Car()
+carl.wheels = 4
+car2=carl
+car2.wheels = 3
+print(carl.wheels)
+
+car3 = copy.copy(carl)
+car3.wheels = 6
+print(carl.wheels)
+
